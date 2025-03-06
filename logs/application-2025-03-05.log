@@ -1,0 +1,106 @@
+2025-03-05 12:29:14 [main] INFO  c.e.exampleOne.ExampleOneApplication - Starting ExampleOneApplication using Java 21.0.1 with PID 29628 (C:\Users\juancahe\OneDrive - Capgemini\Escritorio\cursos\exampleOne\out\production\classes started by juancahe in C:\Users\juancahe\OneDrive - Capgemini\Escritorio\cursos\exampleOne)
+2025-03-05 12:29:14 [main] DEBUG c.e.exampleOne.ExampleOneApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05 12:29:14 [main] INFO  c.e.exampleOne.ExampleOneApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-05 12:29:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-05 12:29:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 438 ms. Found 1 JPA repository interface.
+2025-03-05 12:29:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2025-03-05 12:29:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8739 ms
+2025-03-05 12:29:27 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-05 12:29:28 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-05 12:29:28 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-05 12:29:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-05 12:29:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-05 12:29:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path '/'
+2025-03-05 12:29:35 [main] INFO  c.e.exampleOne.ExampleOneApplication - Started ExampleOneApplication in 21.241 seconds (process running for 21.908)
+2025-03-05 12:29:52 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-05 12:29:52 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-03-05 12:29:52 [http-nio-8090-exec-1] ERROR c.e.e.e.GlobalExceptionHandler - Unexpected error occurred
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:509)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-03-05 12:29:58 [http-nio-8090-exec-4] INFO  c.e.e.controller.DataController - Received request to save data: com.example.exampleOne.bo.DataBo@44f27123
+2025-03-05 12:29:58 [http-nio-8090-exec-4] DEBUG c.e.exampleOne.service.DataService - Converting DataBo to DataEntity: com.example.exampleOne.bo.DataBo@44f27123
+2025-03-05 12:29:59 [http-nio-8090-exec-4] INFO  c.e.exampleOne.service.DataService - DataEntity saved in DB: com.example.exampleOne.eo.DataEntity@79cc7751
+2025-03-05 12:29:59 [http-nio-8090-exec-4] INFO  c.e.e.controller.DataController - Data saved successfully: com.example.exampleOne.bo.DataBo@3a54e4d8
+2025-03-05 12:31:09 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05 12:31:09 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-05 12:31:09 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-05 15:01:52 [main] INFO  c.e.exampleOne.ExampleOneApplication - Starting ExampleOneApplication using Java 21.0.1 with PID 11424 (C:\Users\juancahe\OneDrive - Capgemini\Escritorio\cursos\exampleOne\out\production\classes started by juancahe in C:\Users\juancahe\OneDrive - Capgemini\Escritorio\cursos\exampleOne)
+2025-03-05 15:01:52 [main] DEBUG c.e.exampleOne.ExampleOneApplication - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05 15:01:52 [main] INFO  c.e.exampleOne.ExampleOneApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-05 15:01:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-05 15:01:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
+2025-03-05 15:01:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2025-03-05 15:01:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2380 ms
+2025-03-05 15:01:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-05 15:01:56 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-05 15:01:56 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-05 15:02:01 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-05 15:02:04 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-05 15:02:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path '/'
+2025-03-05 15:02:06 [main] INFO  c.e.exampleOne.ExampleOneApplication - Started ExampleOneApplication in 14.933 seconds (process running for 15.879)
+2025-03-05 15:02:22 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-05 15:02:22 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-05 15:02:22 [http-nio-8090-exec-2] INFO  c.e.e.controller.DataController - Request received to get all data
+2025-03-05 15:02:23 [http-nio-8090-exec-2] INFO  c.e.e.controller.DataController - Successfully retrieved all data
+2025-03-05 15:02:36 [http-nio-8090-exec-3] INFO  c.e.e.controller.DataController - Health check requested
+2025-03-05 15:06:43 [http-nio-8090-exec-5] INFO  c.e.e.controller.DataController - Fetching data for ID: 1
+2025-03-05 15:06:43 [http-nio-8090-exec-5] DEBUG c.e.exampleOne.service.DataService - Searching for DataEntity with ID: 1
+2025-03-05 15:06:43 [http-nio-8090-exec-5] INFO  c.e.exampleOne.service.DataService - Successfully retrieved DataEntity: com.example.exampleOne.eo.DataEntity@5436a1c3
+2025-03-05 15:06:43 [http-nio-8090-exec-5] INFO  c.e.e.controller.DataController - Data retrieved successfully: com.example.exampleOne.bo.DataBo@89cc6b0
+2025-03-05 15:07:54 [http-nio-8090-exec-7] INFO  c.e.e.controller.DataController - Fetching data for ID: 2
+2025-03-05 15:07:54 [http-nio-8090-exec-7] DEBUG c.e.exampleOne.service.DataService - Searching for DataEntity with ID: 2
+2025-03-05 15:07:54 [http-nio-8090-exec-7] INFO  c.e.exampleOne.service.DataService - Successfully retrieved DataEntity: com.example.exampleOne.eo.DataEntity@13b55f8d
+2025-03-05 15:07:54 [http-nio-8090-exec-7] INFO  c.e.e.controller.DataController - Data retrieved successfully: com.example.exampleOne.bo.DataBo@4a6ad735
+2025-03-05 15:08:53 [http-nio-8090-exec-8] INFO  c.e.e.controller.DataController - Fetching data for ID: 2
+2025-03-05 15:08:53 [http-nio-8090-exec-8] DEBUG c.e.exampleOne.service.DataService - Searching for DataEntity with ID: 2
+2025-03-05 15:08:53 [http-nio-8090-exec-8] INFO  c.e.exampleOne.service.DataService - Successfully retrieved DataEntity: com.example.exampleOne.eo.DataEntity@77d6083e
+2025-03-05 15:08:53 [http-nio-8090-exec-8] INFO  c.e.e.controller.DataController - Data retrieved successfully: com.example.exampleOne.bo.DataBo@50a992a2
+2025-03-05 15:09:04 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05 15:09:04 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-05 15:09:04 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

@@ -14,13 +14,17 @@ public class DataEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Name cannot be empty")
-    @Size(min = 3, max = 50, message = "The name must be between 3 and 50 characters long.")
     private String name;
 
-    @Min(value = 1, message = "The minimum age allowed is 1")
-    @Max(value = 120, message = "The maximum age allowed is 120")
     private int edad;
+
+    public DataEntity() {}
+
+    public DataEntity(Long id, String name, int edad) {
+        this.id = id;
+        this.name = name;
+        this.edad = edad;
+    }
 
     public Long getId() {
         return id;
